@@ -3,7 +3,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    pass
+    return render_template(
+        "welcome to za the club"
+    )
+
 
 if __name__ == '__main__':
    app.run(debug = True)
