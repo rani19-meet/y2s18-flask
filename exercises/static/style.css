@@ -2,3 +2,9 @@
 body {
     background-color: green
 }
+p{
+    margin: 25px 50px 75px 100px;
+}
+div{
+    padding: 25px 50px 75px 100px;
+}
