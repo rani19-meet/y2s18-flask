@@ -5,7 +5,21 @@
     </head>
     <body>
         <h1>manchester united is my favorite team</h1>
+        <p>why is football the best sport?</p>
         <h2>it's one of the most competitive sports and the most fun to watch</h2>
+        <p>my favorite players are :</p>
+        <h3>Players:</h3>
+        <ul>
+            {% for player in fav_players %}
+            <li>{{player}}</li>
+            {% endfor %}
+        </ul>
+        {%if likes_same_sport == True %}
+            <p>render the whole website</p>
+        {% else %}
+            <h1>why is football the best sport?</h1>
+            <p>it's one of the most competitive sports and the most fun to watch</p>
+        {% endif %}
     </body>
 
 
